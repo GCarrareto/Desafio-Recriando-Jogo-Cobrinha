@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device.width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script defer src="script.js"></script>
     <title>Solid Snake</title>
 </head>
 
-<body>
+<body class="container-fluid titulo">
+    <div class="container-fluid text-center font-weight-bolder shadow rounded border border-dark titulo">
+        <h1>
+            <p>SOLID SNAKE</p>
+        </h1>
+    </div>
 
-    <canvas id='snake' width="512" height="512"></canvas>
+    <div class="container-fluid shadow rounded menu">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active bg-dark" href="index.html">Iniciar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Dificuldade</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-dark" href="#">Fácil</a>
+                <a class="dropdown-item text-dark" href="#">Normal</a>
+                <a class="dropdown-item text-dark" href="#">Difícil</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="https://github.com/GCarrareto" tabindex="-1" aria-disabled="true">@GCarrareto</a>
+            </li>
+          </ul>
+          
+    </div>
 
+    <div class="container-fluid text-center shadow rounded jogo">
+        <canvas class="container-fluid text-center" id='snake' width="512" height="512"></canvas>
+    </div>
     
 
 </body>
